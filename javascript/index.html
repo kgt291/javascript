@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TITLE HERE</title>
+        <style>
+            .complete {background-color:#f00;}
+            .hideIncomplete li:not(.complete) {display:none}
+            .hideComplete li.complete {display:none}
+        </style>
+    </head>
+    <body>
+        <h1>TODOLIST</h1>
+        <input type="button" id="buttonOne" value="click here" />
+        <input id="myInput" />
+        <div class="count">
+            <button id="total">전체 : 0</button>
+            <button id="unfinished">미완료: 0</button>
+            <button id="finished">완료: 0</button>
+        </div>
+        <ul id="todo" class="hideComplete">
+        </ul>
+        <script src="./app.js"></script>
+    </body>
+</html>
